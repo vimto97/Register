@@ -31,5 +31,10 @@ namespace Register
         {
 
         }
+
+        private void payment_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
