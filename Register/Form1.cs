@@ -24,8 +24,12 @@ namespace Register
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (!string.IsNullOrWhiteSpace(txtName.Text) && !lstNames.Items.Contains(txtName.Text))
-                lstNames.Items.Add(txtName.Text);
+            if (string.IsNullOrWhiteSpace(txtName.Text))
+            {
+                string message = "Nothing in textbox";
+                string title = "Alert";
+                MessageBox.Show(message, title);
+            }
             
             txtName.Text = "";
         }
@@ -47,10 +51,7 @@ namespace Register
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            
-            lstNames.Items.Remove(searchBox.Text);
-            
-            searchBox.Text = "";
+
         }
 
         private void button1_Click_2(object sender, EventArgs e)
@@ -58,8 +59,14 @@ namespace Register
             
             Form FormAddress = new FormAddress();
             FormAddress.Show();
-            this.Close();
             
+            
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form payment = new payment();
+            payment.Show();
         }
     }
 }
