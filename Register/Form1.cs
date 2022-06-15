@@ -68,5 +68,10 @@ namespace Register
             Form payment = new payment();
             payment.Show();
         }
+
+        private void txtName_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
