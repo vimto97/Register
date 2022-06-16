@@ -19,8 +19,9 @@ namespace Register
 
         private void button1_Click(object sender, EventArgs e)
         {
-
-            Close();
+            label10.Text = textBox1.Text.ToString();
+            label20.Text = textBox2.Text.ToString();
+            MessageBox.Show("Added to the DBS");
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -30,7 +31,7 @@ namespace Register
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            
+            AddressView.Text = (comboBox1.SelectedItem.ToString() + " Round!");
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -41,6 +42,16 @@ namespace Register
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label10_Click(object sender, EventArgs e)
+        {
+            textBox1.Text.ToString();
         }
     }
 }

@@ -37,6 +37,12 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.AddressView = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button1
@@ -75,7 +81,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(182, 128);
+            this.label3.Location = new System.Drawing.Point(182, 168);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(50, 24);
             this.label3.TabIndex = 3;
@@ -85,7 +91,7 @@
             // 
             this.lable4.AutoSize = true;
             this.lable4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lable4.Location = new System.Drawing.Point(92, 166);
+            this.lable4.Location = new System.Drawing.Point(92, 209);
             this.lable4.Name = "lable4";
             this.lable4.Size = new System.Drawing.Size(140, 24);
             this.lable4.TabIndex = 4;
@@ -112,28 +118,96 @@
             // textBox3
             // 
             this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(247, 166);
+            this.textBox3.Location = new System.Drawing.Point(247, 209);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(235, 26);
             this.textBox3.TabIndex = 7;
             // 
             // comboBox1
             // 
+            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.Add("Hartford");
-            this.comboBox1.Items.Add("Castle");
-            this.comboBox1.Items.Add("Kingsmead");
-            this.comboBox1.Location = new System.Drawing.Point(247, 130);
+            this.comboBox1.Items.AddRange(new object[] {
+            "Hartford",
+            "Castle",
+            "Kingsmead"});
+            this.comboBox1.Location = new System.Drawing.Point(247, 164);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(235, 21);
+            this.comboBox1.Size = new System.Drawing.Size(235, 33);
             this.comboBox1.TabIndex = 8;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(12, 9);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(236, 25);
+            this.label4.TabIndex = 9;
+            this.label4.Text = "Customer Information";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(140, 131);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(92, 24);
+            this.label5.TabIndex = 10;
+            this.label5.Text = "PostCode";
+            // 
+            // textBox4
+            // 
+            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox4.Location = new System.Drawing.Point(247, 127);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(235, 31);
+            this.textBox4.TabIndex = 11;
+            // 
+            // AddressView
+            // 
+            this.AddressView.AutoSize = true;
+            this.AddressView.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AddressView.Location = new System.Drawing.Point(531, 49);
+            this.AddressView.Name = "AddressView";
+            this.AddressView.Size = new System.Drawing.Size(132, 29);
+            this.AddressView.TabIndex = 12;
+            this.AddressView.Text = "Information";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(531, 90);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(79, 29);
+            this.label10.TabIndex = 13;
+            this.label10.Text = "label1";
+            this.label10.Click += new System.EventHandler(this.label10_Click);
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Location = new System.Drawing.Point(531, 131);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(79, 29);
+            this.label20.TabIndex = 14;
+            this.label20.Text = "label2";
             // 
             // FormAddress
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(544, 430);
+            this.ClientSize = new System.Drawing.Size(1066, 430);
+            this.Controls.Add(this.label20);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.AddressView);
+            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
@@ -161,5 +235,11 @@
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.Label AddressView;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label20;
     }
 }
