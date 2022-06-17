@@ -196,6 +196,7 @@
             this.label20.Size = new System.Drawing.Size(79, 29);
             this.label20.TabIndex = 14;
             this.label20.Text = "label2";
+            this.label20.Click += new System.EventHandler(this.label20_Click);
             // 
             // FormAddress
             // 

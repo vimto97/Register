@@ -20,7 +20,7 @@ namespace Register
         private void button1_Click(object sender, EventArgs e)
         {
             label10.Text = textBox1.Text.ToString();
-            label20.Text = textBox2.Text.ToString();
+            label20.Text = (textBox2.Text.ToString() + textBox4.Text.ToString());
             MessageBox.Show("Added to the DBS");
         }
 
@@ -52,6 +52,11 @@ namespace Register
         private void label10_Click(object sender, EventArgs e)
         {
             textBox1.Text.ToString();
+        }
+
+        private void label20_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
