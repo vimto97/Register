@@ -175,6 +175,7 @@
             this.AddressView.Size = new System.Drawing.Size(132, 29);
             this.AddressView.TabIndex = 12;
             this.AddressView.Text = "Information";
+            this.AddressView.Click += new System.EventHandler(this.AddressView_Click);
             // 
             // label10
             // 

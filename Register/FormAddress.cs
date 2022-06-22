@@ -58,5 +58,10 @@ namespace Register
         {
 
         }
+
+        private void AddressView_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
