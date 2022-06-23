@@ -20,9 +20,11 @@ namespace Register
         private void button1_Click(object sender, EventArgs e)
         {
             int index1 = comboBox1.SelectedIndex;
-            //Total.Text = ("Hello");
-            //Fix the line below to calculate the following
-            Total.Text = "£" + textBox1.Text;
+            int one = Convert.ToInt32(textBox1.Text);
+            int two = Convert.ToInt32(AddCostBox.Text);
+            int three = one + two;
+            int total = (index1+1) * three;
+            Total.Text = "£" + total;
         }
 
         private void label1_Click(object sender, EventArgs e)
